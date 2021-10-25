@@ -9,16 +9,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task6 {
-//    public static void main(String[] args) {
-//        int numberOfSpaces = 0;
-//        String demoLine = "  Made something     for create something       !   ";
-//            for (char c : demoLine.toCharArray()) {
-//                if (c == ' ') {
-//                    numberOfSpaces++;
-//                }
-//        }
-//        System.out.printf("Maximum spaces value: %d", numberOfSpaces);
-//    }
 public static void main(String[] args) {
     String demoLine = "  Made something         for create something    !       ";
     int maxNumberOfSpaces = 0;
