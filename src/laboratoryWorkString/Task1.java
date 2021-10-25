@@ -5,9 +5,6 @@ package laboratoryWorkString;
 
 import laboratoryWorkString.util.DemoStrings;
 
-import java.util.Locale;
-import java.util.regex.Pattern;
-
 public class Task1 {
     public static void main(String[] args) {
         for (int i = 0; i < DemoStrings.testLinesArray.length; i++) {
