@@ -1,4 +1,4 @@
-package laboratoryWorkString.util;
+package Util;
 
 public class DemoStrings {
         public static String[] testLinesArray = {"1) Hello my black kitty! I love my BlAcK kitty!",

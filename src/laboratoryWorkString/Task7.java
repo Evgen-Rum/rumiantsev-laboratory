@@ -3,7 +3,7 @@ package laboratoryWorkString;
 В строке после каждого символа "а" вставить символ "b".
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 public class Task7 {
     public static void main(String[] args) {

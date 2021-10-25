@@ -3,7 +3,7 @@ package laboratoryWorkString;
 В строке найти количество цифр.
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

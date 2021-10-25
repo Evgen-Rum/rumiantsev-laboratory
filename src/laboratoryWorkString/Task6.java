@@ -3,7 +3,7 @@ package laboratoryWorkString;
 Найдите наибольшее количество пробелов идущих подряд в тексте.
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

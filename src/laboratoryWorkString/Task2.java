@@ -3,7 +3,7 @@ package laboratoryWorkString;
 Заменить в строке все слова black на white без учета регистра.
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

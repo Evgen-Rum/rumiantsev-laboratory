@@ -3,7 +3,7 @@ package laboratoryWorkString;
 Дан массив строк в camelCase. Преобразовать входные данные в snake_case.
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 public class Task1 {
     public static void main(String[] args) {

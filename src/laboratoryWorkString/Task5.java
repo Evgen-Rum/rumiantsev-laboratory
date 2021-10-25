@@ -3,7 +3,7 @@ package laboratoryWorkString;
 Удалить в строке все лишние пробелы.
  */
 
-import laboratoryWorkString.util.DemoStrings;
+import Util.DemoStrings;
 
 public class Task5 {
     public static void main(String[] args) {
