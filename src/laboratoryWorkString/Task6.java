@@ -9,16 +9,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task6 {
-public static void main(String[] args) {
-    String demoLine = "  Made something         for create something    !       ";
-    int maxNumberOfSpaces = 0;
-    Matcher matcher = Pattern.compile("(.)\\1+").matcher(demoLine);
-    while (matcher.find()) {
-        String subString = matcher.group();
-        if (subString.length() > maxNumberOfSpaces) {
-            maxNumberOfSpaces = subString.length();
+    public static void main(String[] args) {
+        int maxNumberOfSpaces = 0;
+        for (int i = 0; i < DemoStrings.testLinesArray.length; i++) {
+            Matcher matcher = Pattern.compile("(.)\\1+").matcher(DemoStrings.testLinesArray[i]);
+            while (matcher.find()) {
+                String subString = matcher.group();
+                if (subString.length() > maxNumberOfSpaces) {
+                    maxNumberOfSpaces = subString.length();
+                }
+            }
         }
+        System.out.printf("Maximum spaces number is: %d", maxNumberOfSpaces);
     }
-    System.out.printf("Maximum spaces number is: %d", maxNumberOfSpaces);
-}
 }
