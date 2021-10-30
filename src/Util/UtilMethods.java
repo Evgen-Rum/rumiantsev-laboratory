@@ -44,7 +44,7 @@ public class UtilMethods {
     }
 
     //    public static String readStringFromConsole(String defaultValue) {
-//        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.ioLaboratory.resources.in);
 //        int attempts = 0;
 //        System.out.println("Please enter your line!");
 //        while (true) {
