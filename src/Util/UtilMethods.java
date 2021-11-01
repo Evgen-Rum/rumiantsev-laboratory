@@ -1,5 +1,10 @@
 package Util;
-
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class UtilMethods {
@@ -63,7 +68,7 @@ public class UtilMethods {
     public static String readStringFromConsole(String defaultValue, String messageToUser) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(messageToUser);
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             String enteredLine = scanner.nextLine();
             if (!enteredLine.matches(".*\\d+.*")) {
                 return enteredLine;
