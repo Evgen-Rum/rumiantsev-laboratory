@@ -48,23 +48,6 @@ public class UtilMethods {
         return defaultValue;
     }
 
-    //    public static String readStringFromConsole(String defaultValue) {
-//        Scanner scanner = new Scanner(System.ioLaboratory.resources.in);
-//        int attempts = 0;
-//        System.out.println("Please enter your line!");
-//        while (true) {
-//           String enteredLine = scanner.nextLine();
-//            if (!enteredLine.matches(".*\\d+.*")) {
-//                return enteredLine;
-//            } else if (attempts < 2) {
-//                System.out.println("Incorrect value! Please re-enter!");
-//                attempts++;
-//            } else {
-//                System.out.println("3 times incorrect value entered! Used default value!");
-//                return defaultValue;
-//            }
-//        }
-//    }
     public static String readStringFromConsole(String defaultValue, String messageToUser) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(messageToUser);
