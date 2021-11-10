@@ -1,9 +1,6 @@
 package Util;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -41,5 +38,26 @@ public class UtilIO {
             return false;
         }
         return true;
+    }
+    public static boolean extensionIs(File file, String extension) {
+        return file.getName().endsWith(extension);
+    }
+    public static void copyFiles(String sourceName, String targetDir) {
+        createDirectoryIfNotExist(targetDir);
+        File folder = new File(sourceName);
+        File[] listOfFiles = folder.listFiles();
+        Path destDir = Paths.get(targetDir);
+        if (listOfFiles != null) {
+            for (File file : listOfFiles) {
+                try {
+                    Files.copy(file.toPath(), destDir.resolve(file.getName()));
+                    System.out.println("Files copied successfully.");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            System.out.println("Error! Files already exists");
+        }
     }
 }
